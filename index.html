@@ -43,12 +43,15 @@
             <section id="gallery">
                 <h2>What's In Vitro Fertilization (IVF) ? </h2>
                 <div class="image-grid">
-                    <!-- <div class="image">
-                        <img src="image1.jpg" alt="Image 1">
-                    </div> -->
+                    <div class="image">
+                        <img src="babyivfimage.png" alt="Image 1">
+                    </div>
                     <div class="image">
                         <img src="ivf6.jpg" alt="Image 1">
                     </div>
+                    <!-- <div class="image">
+                        <img src="ivfmomimage.png" alt="Image 1">
+                    </div> -->
 
                 </div>
             </section>
@@ -77,7 +80,15 @@
 
         <section id="testimonials">
             <h2>Testimonials</h2>
+
+
             <div class="testimonial-container">
+                <!-- Left image -->
+                <div class="advertisement-left">
+                    <img src="ivfmomimage.png" alt="Left Advertisement">
+                </div>
+
+                <!-- Testimonials -->
                 <div class="testimonial">
                     <p>I had an excellent experience with Dr. Abi mam and the center. Very well hospitalized and special care taken for individuals. The way of explanation are in detail. Her politeness and professionalism immediately put me at ease. Infrastructure
                         is neat and tidy, well organised facilities were truly impressive. I felt confident in the care received I throughout my visit. Highly recommended! Thanks to each and everyone. ~ patient </p>
@@ -86,9 +97,19 @@
                     <p>Hospital facilities are very good and working staff are very kind and concerned and their treatment and very satisfied especially doctors and very good and kind hearted person with positive and encouraging so helpful We are satisfied
                         ~ patient </p>
                 </div>
+
+                <!-- Right image -->
+                <div class="advertisement-right">
+                    <img src="add1.jpg" alt="Right Advertisement">
+                </div>
             </div>
 
             <div class="testimonial-container">
+                <!-- Left image -->
+                <div class="advertisement-left">
+                    <img src="add2.jpg" alt="Left Advertisement">
+                </div>
+
                 <div class="testimonial">
                     <p>This is my first choice of hospital for my wife. Now this time we are showing my wife in the vellore branch well efficient & friendly staff s. They take care of everything. The hospital is well maintained, Great appreciation to all
                         staffs. ~ patient </p>
@@ -98,9 +119,21 @@
                         the patients conditions at any time I also want to thank all the Doctors and all staff nurses who cared us from starting to post delivery. Now me and Family really happy ~ patient .
                     </p>
                 </div>
+
+                <!-- Right image -->
+                <div class="advertisement-right">
+                    <img src="add3.jpg" alt="Right Advertisement">
+                </div>
+
             </div>
 
             <div class="testimonial-container">
+
+                <!-- Left image -->
+                <div class="advertisement-left">
+                    <img src="add4.png" alt="Left Advertisement">
+                </div>
+
                 <div class="testimonial">
                     <p>Very good service with friendly caring.and hygiene we never expected like this but awesome, doctors, staffs are very active and caring, totally super keep it up, food was awesome ~ Vinoth.R</p>
                 </div>
@@ -110,25 +143,52 @@
                         very thankful for your counselling and good treatment. Its very helpful for my life. we never forget your kind speech and advice Thanks Lot❤❤❤ ~ Mowfas Ms
                     </p>
                 </div>
+
+                <!-- Right image -->
+                <div class="advertisement-right">
+                    <img src="add5.png" alt="Right Advertisement">
+                </div>
+
             </div>
 
             <div class="testimonial-container">
+
+                <!-- Left image -->
+                <div class="advertisement-left">
+                    <img src="add7.png" alt="Left Advertisement">
+                </div>
+
                 <div class="testimonial">
                     <p>It is so clean and neat with their facility and their servings towards patients Such an good kind hearted reply and conweys towards everybody Their surroundings and all was good and maintained well ~ Sakthi Santa</p>
                 </div>
                 <div class="testimonial">
                     <p>Ishwarya hospital has most experienced doctors and caring nurses. All treatments are successfully going in this hospital. I really prefer this hospital for all kind of treatment. ~ Abinaya S</p>
                 </div>
+                <!-- Right image -->
+                <div class="advertisement-right">
+                    <img src="add8.png" alt="Right Advertisement">
+                </div>
+
             </div>
         </section>
         <hr>
 
 
         <section id="process">
-            <h2>Process</h2>
-            <div class="image-container">
-                <img src="ivfprocess.jpg" alt="Description of the image">
-            </div>
+            <h1>Process</h1>
+            <section id="gallery">
+                <h2>In Vitro Fertilization Process</h2>
+                <div class="video-container">
+                    <video controls loop muted class="hover-video">
+                        <source src="IVF process Video.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+
+
+            <h2>IVF procedure explained step by step.</h2>
             <div class="video-container">
 
                 <div>
@@ -221,6 +281,14 @@
                 // Handle other search queries (optional)
                 alert('No matches found for: ' + searchQuery);
             }
+        });
+
+        document.querySelector('.hover-video').addEventListener('mouseover', function() {
+            this.play();
+        });
+        document.querySelector('.hover-video').addEventListener('mouseout', function() {
+            this.pause();
+            this.currentTime = 0;
         });
     </script>
 </body>
